@@ -1,0 +1,48 @@
+nav{
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height:50px;
+}
+
+#logo{
+    color:white;
+    font-weight:bolder;
+    font-size: 20px;
+    font-family: Poppins, serif;
+    padding-right: 80px;
+}
+
+.menu-links{
+    list-style-type:none;
+    display: flex
+}
+
+.menu-links li{
+    margin: 5px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    display: flex;
+    outline: 10px;
+}
+.menu-links li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+body{
+    background-image: url(firstbackground.avif);
+    margin: 0px;
+    font-family: Poppins, serif;
+}
+.heading{
+    font-size:80px;
+    display: block;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
