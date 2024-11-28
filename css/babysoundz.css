@@ -87,7 +87,7 @@ header {
   font-style: normal;
 }
 .html-body {
-  background-image: url(../image/bg.JPG);
+  background-image: url("../image/bg.JPG");
   background-repeat: no-repeat;
   background-size: cover;
   /* background-position: center; */
@@ -265,7 +265,7 @@ header {
   padding: 15px;
   outline: none;
   color: white;
-  border-radius: 0;
+  border-radius: none !important;
   background-color: transparent;
   border: none;
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
@@ -389,12 +389,26 @@ header {
     padding: 20px;
   }
   .image-writeUp {
-    width: 350px;
-    height: 350px;
+    width: 320px;
+    height: 320px;
   }
   .writeUpcontent {
     width: 100% !important;
     font-size: 12px !important;
+  }
+  .tracks-content img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+  }
+  .Header {
+    font-size: 20px !important;
+  }
+  .header-track {
+    font-size: 20px !important;
+  }
+  .logo {
+    font-size: 20px;
   }
 }
 @media screen and (max-width: 1136px) {
