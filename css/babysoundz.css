@@ -112,7 +112,7 @@ header {
   font-style: normal;
 }
 .html-body {
-  background-image: url("../image/bg.JPG");
+  background-image: url("../image/ayobackground.JPG");
   background-repeat: no-repeat;
   background-size: cover;
   /* background-position: center; */
@@ -357,12 +357,12 @@ header {
     margin-right: 10px;
   }
   header {
-    padding: 20px;
-    position: relative;
+    padding: 15px;
+    position: fixed;
     overflow: visible;
   }
   .nav-body {
-    position: absolute;
+    position: fixed;
     top: 50px;
     right: 0;
     left: 0;
