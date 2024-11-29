@@ -1,5 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Outfit:wght@100..900&family=Phetsarath:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+:root {
+  --color: #233d63;
+}
 * {
   padding: 0;
   margin: 0;
@@ -11,6 +13,13 @@ header {
   justify-content: space-between;
   padding: 0 20px;
   background-color: white;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  width: 100% !important;
+  overflow: hidden;
+  z-index: 10000;
 }
 
 .nav-body ul {
@@ -27,12 +36,13 @@ header {
   display: flex;
 }
 .nav-body ul li a {
-  color: black;
+  color: var(--color);
+  font-weight: 600;
   text-decoration: none;
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
-  font-size: 14px;
+  font-size: 15px;
   transition: 250ms;
   border-radius: 20px;
   display: flex;
@@ -49,7 +59,7 @@ header {
   border-radius: 100px;
   background-color: tomato;
   position: absolute;
-  bottom: 0;
+  bottom: -1px;
   left: 50%;
   transform: translateX(-50%);
   transition: width 250ms ease;
@@ -61,14 +71,14 @@ header {
 
 .logo {
   font-size: 30px;
-  color: black;
-  font-family: "Phetsarath", serif;
-  font-weight: 700;
+  color: var(--color);
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
   font-style: normal;
 }
 
 .icon {
-  color: black;
+  color: var(--color);
   cursor: pointer;
   display: none;
 }
@@ -129,9 +139,9 @@ header {
 .social-media .media-container a {
   height: 30px;
   width: 30px;
-  border: 1px solid black;
+  border: 1px solid var(--color);
   border-radius: 100%;
-  color: black;
+  color: var(--color);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -159,7 +169,9 @@ header {
   justify-content: space-between;
   .writeUpcontent {
     width: 600px;
-    font-family: "Inter", sans-serif;
+    font-family: "Nunito Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+      "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     font-optical-sizing: auto;
     font-style: normal;
     font-size: 15px;
@@ -167,7 +179,9 @@ header {
     .Header {
       font-size: 35px;
       letter-spacing: 5px;
-      font-family: "Inter", sans-serif;
+      font-family: "Nunito Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+        "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
       font-optical-sizing: auto;
       font-style: normal;
       font-weight: bold;
@@ -342,50 +356,49 @@ header {
     display: block;
     margin-right: 10px;
   }
+  header {
+    padding: 20px;
+    position: relative;
+    overflow: visible;
+  }
   .nav-body {
     position: absolute;
     top: 50px;
     right: 0;
     left: 0;
-  }
-  .nav-body {
+    z-index: 10000;
     height: 0;
     overflow: hidden;
+    background-color: white;
   }
+  /* .nav-body {
+   
+  } */
   .active {
-    height: 100%;
+    height: 400px;
     transition: 500ms;
   }
   .nav-body ul {
     display: flex;
-    margin-top: 20px;
-    align-items: center;
+    padding-top: 30px;
+    align-items: flex-start;
     /* padding-right: 10px; */
     gap: 10px !important;
     flex-direction: column;
-    background-color: rgba(0, 0, 0, 0.386);
   }
 
   .nav-body ul li {
     height: 40px;
     width: 80px;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     display: flex;
   }
   .nav-body ul li a {
     transition: 250ms;
+    color: var(--color);
   }
-  .nav-body ul li a:hover {
-    background-color: black;
-    color: white;
-    border-radius: 20px;
-    height: 100%;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-  }
+
   .social-media {
     display: none;
   }
