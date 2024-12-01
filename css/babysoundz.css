@@ -236,7 +236,7 @@ header {
 .tracks-content img {
   width: 120px;
   height: 120px;
-  border-radius: 10px;
+  border-radius: 3px;
 }
 .artist {
   font-size: 20px;
@@ -441,7 +441,7 @@ header {
   .tracks-content img {
     width: 100px;
     height: 100px;
-    border-radius: 10px;
+    border-radius: 4px;
   }
   .Header {
     font-size: 20px !important;
@@ -459,7 +459,7 @@ header {
     font-size: 20px;
   }
   .email-sender button {
-    padding: 1px 40px;
+    padding: 1px 20px;
   }
   .contact-header {
     font-size: 20px;
