@@ -204,13 +204,26 @@ header {
 } */
 .header-track {
   font-size: 35px;
-  letter-spacing: 5px;
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
   font-weight: bold;
   text-align: center;
   margin: 30px 0;
+  position: relative;
+  letter-spacing: 1px;
+}
+.header-track::after {
+  content: "";
+  height: 3px;
+  width: 100px;
+  border-radius: 100px;
+  background-color: tomato;
+  position: absolute;
+  bottom: -1px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: width 250ms ease;
 }
 .latest-tracks-container {
   padding: 0 150px;
@@ -294,7 +307,7 @@ header {
   padding: 15px;
   outline: none;
   color: white;
-  border-radius: none !important;
+  border-radius: 1px !important;
   background-color: transparent;
   border: none;
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
@@ -416,6 +429,12 @@ header {
   .writeUp-container {
     padding: 20px;
   }
+  .header-track::after {
+    width: 80px;
+  }
+  .listen-btn {
+    padding: 5px 30px;
+  }
   .image-writeUp {
     width: 320px;
     height: 320px;
@@ -436,6 +455,18 @@ header {
     font-size: 20px !important;
   }
   .logo {
+    font-size: 20px;
+  }
+  .artist {
+    font-size: 15px;
+  }
+  .footer-header {
+    font-size: 20px;
+  }
+  .email-sender button {
+    padding: 1px 40px;
+  }
+  .contact-header {
     font-size: 20px;
   }
 }
